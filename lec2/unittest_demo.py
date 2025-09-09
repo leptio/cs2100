@@ -25,10 +25,13 @@ def get_area_of_rectangle(width:int, height:int) -> int:
 
 
 class TestArea(unittest.TestCase):
+    """Tests the behavior of function get_area_of_rectangle()"""
     def test_3_by_4(self) -> None:
+        """ensure that a 3 by 4 rectangle has an area of 12"""
         self.assertEqual(12, get_area_of_rectangle(3,4))
-    
+
     def test_negative_area(self) -> None:
+        """ensure that a negative sized rectangle raises an error"""
         with self.assertRaises(ValueError):
             get_area_of_rectangle(-1,4)
 
