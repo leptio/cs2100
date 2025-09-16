@@ -1,9 +1,12 @@
+"""Creates a function that adds numbers from a list"""
 from typing import List
+
 def sum_with_bad_manners(in_list: List[int]) -> int:
-    sum: int = 0
-    while (len(in_list) > 0):
-        sum += in_list.pop()
-    return sum
+    """Add numbers in a list"""
+    new_sum: int = 0
+    while len(in_list) > 0:
+        new_sum += in_list.pop()
+    return new_sum
 
 my_list: List[int] = [1,2,3,4]
 print(my_list)

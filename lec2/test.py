@@ -1,13 +1,14 @@
+"""test to swap variables using temp swap in memory"""
 #swap variables
 #can also perform with x,y=y,x
-x:int = 3
-y:int = 4
-temp: int=x
-x=y 
-y=temp
+X:int = 3
+Y:int = 4
+temp: int=X
+X=Y
+Y=temp
 
-print(x)
-print(y)
+print(X)
+print(Y)
 
 print("I am so excited"+"!"*3)
 
