@@ -14,8 +14,8 @@ print("Shape:", a.shape)
 print("Strides:", a.strides)
 
 #Change into a 2-d matrix by reshaping
-shape: tuple[int, int] = (2,3)
-a.shape = shape
+shape_mode: tuple[int, int] = (2,3)
+a.shape = shape_mode
 print(a)
 print("Shape:", a.shape)
 print("Strides:", a.strides)
