@@ -12,4 +12,4 @@ new_df = pd.DataFrame({
 print(pd.merge(df, new_df))
 
 #outer join takes all data, left join does not discard left, right join does not discard right
-print(pd.merge(df, new_df, on='outer'))
+print(pd.merge(df, new_df, how='outer'))
