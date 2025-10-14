@@ -1,0 +1,1 @@
+#function __eq__() overrides == to make things able to equal each other however you want
