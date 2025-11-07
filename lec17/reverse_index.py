@@ -5,7 +5,7 @@ class Range(Iterable[int]):
         self.start = start
         self.stop = stop
         self.step = step
-    
+
     def __iter__(self) -> Iterator[int]:
         if self.start < self.stop:
             return iter(range(self.start, self.stop, self.step))
@@ -18,7 +18,7 @@ class BackwardsIter(Iterator[int]):
         self.stop = stop
         self.step = step
         self.current = start
-    
+
     def __next__(self) -> int:
         if self.current <= self.stop:
             raise StopIteration
